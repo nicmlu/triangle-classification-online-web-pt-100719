@@ -9,11 +9,11 @@ class Triangle
   
   def kind 
     if side1 == side2 && side2 == side3
-      "equilateral"
+      p :equilateral
     elsif side1 != side2 && side2 != side3
-      "scalene"
+      p :scalene
     else 
-      "isosceles"
+      p :isosceles
     end
   end
   
