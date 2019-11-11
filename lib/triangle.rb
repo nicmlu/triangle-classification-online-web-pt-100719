@@ -29,7 +29,7 @@ class Triangle
   def invalid?
    if side1 <= 0 || side2 <= 0 || side3 <= 0
      true
-   elsif 
+   elsif side1 + side2 <= side3 || 
   end 
   
 end
