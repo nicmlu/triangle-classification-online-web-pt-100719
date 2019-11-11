@@ -11,7 +11,7 @@ class Triangle
     if self.invalid? 
       raise TriangleError => error
         puts error.message 
-    elsif side1 == side2 && side2 == side3 && side1 == side3
+    elsif side1 == side2 && side1 == side3
       p :equilateral
     elsif side1 != side2 && side2 != side3 && side1 != side3
       p :scalene
