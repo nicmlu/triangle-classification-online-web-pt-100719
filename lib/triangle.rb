@@ -9,10 +9,8 @@ class Triangle
   
   def kind 
     if self.invalid? 
-        raise TriangleError
-        rescue TriangleError => error
-          puts error.message 
-      end
+      raise TriangleError => error
+        puts error.message 
     elsif side1 == side2 && side2 == side3 && side1 == side3
       p :equilateral
     elsif side1 != side2 && side2 != side3 && side1 != side3
