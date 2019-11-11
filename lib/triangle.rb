@@ -12,7 +12,7 @@ class Triangle
       p :equilateral
     elsif side1 != side2 && side2 != side3 && side1 != side3
       p :scalene
-    elsif side1 == side3 || side2 == side3
+    elsif side1 == side3 || side2 == side3 || side1 == side2
       p :isosceles
     end
   end
